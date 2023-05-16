@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <div class="container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <label for="phone number">Phone Number:</label>
+        <input type="tel"  name="phonenumber" id="phonenumber"
+required>
+     <label for="gender">Gender:</label>
+     <select id="gender">
+        <option value="male" name="male">Male</option>
+        <option vlaue="female" name="female">Female</option>
+        <option vlaue="others" name="others">others</option>
+     </select>
+     <label for="lang">Language:</label>
+        <input type="text"  name="Language" id="Language" required>
+        <label for="zip code">Zip code:</label>
+        <input type="text"  name="Zipo code" id="Zip code" required>
+        <label for="about">About:</label>
+        <textarea id="about"></textarea>
+        <div class="mahi">
+        <input type="submit" value="Register"></div>
+    </div></form>
+</body>
+</html>
+<style>
+    body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(58, 0, 128, 0.801);
+}
+h2{
+    text-align: center;
+}
+form{
+    padding: 10px;
+    height:550px;
+    border-radius: 5px;
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color: rgba(255, 89, 0, 0.744);
+
+}
+label{
+    display: block;
+    margin:1px;
+    font-weight: bold;
+}
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password],
+textarea{
+    padding: 8px;
+    border:1px solid whitesmoke;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 2px;
+
+}
+select{
+    width:100%;
+    padding: 8px;
+    border:1px solid whitesmoke;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    color: aliceblue;
+    background-color:rgba(128, 47, 0, 0.774);
+    cursor: pointer;
+
+}
+input[type="submit"]:hover{
+    background-color:rgba(255, 0, 183, 0.671);
+
+}
+.container{
+    width:400px;
+    margin: auto;
+    height: 700px;
+}
+</style>
